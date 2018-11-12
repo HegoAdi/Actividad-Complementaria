@@ -1,0 +1,48 @@
+﻿@model Actividades.Models.periodo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>periodo</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_corto)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre_corto)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.nombre_largo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.nombre_largo)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_inicio)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fecha_inicio)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.fecha_fin)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.fecha_fin)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.estatus)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.estatus)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.idperiodo">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
